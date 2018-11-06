@@ -4,7 +4,7 @@ import (
 	"github.com/markbates/grift/grift"
 	"github.com/pkg/errors"
 
-	"github.com/robvdl/vuerecipe/models"
+	"github.com/jbuchbinder/vuerecipe/models"
 )
 
 var _ = grift.Namespace("db", func() {

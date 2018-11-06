@@ -1,13 +1,13 @@
 development:
-  dialect: postgres
+  dialect: mysql 
   database: vuerecipe_development
-  user: vuerecipe
-  password: vuerecipe
-  host: 127.0.0.1
+  user: test
+  password: test
+  #host: 127.0.0.1
   pool: 5
 
 test:
-  url: {{envOr "TEST_DATABASE_URL" "postgres://vuerecipe:vuerecipe@127.0.0.1:5432/vuerecipe_test?sslmode=disable"}}
+  url: {{envOr "TEST_DATABASE_URL" "mysql://test:test@/vuerecipe_development?multiStatements=true"}}
 
 production:
-  url: {{envOr "DATABASE_URL" "postgres://vuerecipe:vuerecipe@127.0.0.1:5432/vuerecipe_production?sslmode=disable"}}
+  url: {{envOr "DATABASE_URL" "mysql://test:test@/vuerecipe_production?multiStatements=true"}}

@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/robvdl/vuerecipe/actions"
+	"github.com/jbuchbinder/vuerecipe/actions"
 )
 
 func main() {

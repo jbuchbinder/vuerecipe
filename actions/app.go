@@ -11,7 +11,7 @@ import (
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
 
-	"github.com/robvdl/vuerecipe/models"
+	"github.com/jbuchbinder/vuerecipe/models"
 )
 
 // ENV is used to help switch settings based on where the
